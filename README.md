@@ -16,7 +16,7 @@ Then unpack and burn the image to your preferred device with dd.  This procedure
 
 # Kernel Version
 
-The kernel version for this release is:
+The kernel version for this OSMC (RasPI) release is:
 
     $ uname -a
     Linux osmc 4.4.27-7-osmc #1 SMP PREEMPT Tue Jan 24 03:38:31 UTC 2017 armv7l GNU/Linux

@@ -26,11 +26,11 @@ I am using the inexpensive but excellent **August T202 DVB-T** device.  The firm
 
 Building this version is optional as it can be installed with the provided .deb archive - this section is given for the purpose of completelness and can be skipped (see section **Installation** below).  However for those interested the build was done on a Rasberry Pi B by first downloading the latest tvheadend source from https://github.com/tvheadend/tvheadend.  Then cd into the directory and do:  
 
-    AUTOBUILD_CONFIGURE_EXTRA="--disable-ffmpeg_static --disable-libvpx_static --disable-libtheora_static --disable-libvorbis_static --disable-libfdkaac_static" ./Autobuild.sh
+    $ sudo AUTOBUILD_CONFIGURE_EXTRA="--disable-ffmpeg_static --disable-libvpx_static --disable-libtheora_static --disable-libvorbis_static --disable-libfdkaac_static" ./Autobuild.sh
 
 or by doing (untried but according to irc #hts this will also work):
 
-    AUTOBUILD_CONFIGURE_EXTRA="--disable-ffmpeg_static" ./Autobuild.sh
+    $ sudo AUTOBUILD_CONFIGURE_EXTRA="--disable-ffmpeg_static" ./Autobuild.sh
 
 There will be a lot of dependencies to install, and the procedure will stop until these are satisfied.  The final .deb archive products will be:
 

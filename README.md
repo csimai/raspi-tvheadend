@@ -67,7 +67,7 @@ So do:
     libavahi-common3 \
     libavahi-client3
 
-Important:  if the tvheadend 4.09 is already installed, then go to the OSMC App Store and uninstall it and move directory `/home/osmc/.hts` to `/home/osmc/.hts_old`.  Then do:
+**Important:**  if the tvheadend 4.09 is already installed, go to the OSMC App Store and uninstall it and move directory `/home/osmc/.hts` to `/home/osmc/.hts_old`.  Then do:
 
     $ sudo dpkg -i tvheadend_4.1-2426~gef89ef8_armhf.deb
 

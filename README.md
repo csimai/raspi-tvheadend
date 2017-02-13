@@ -4,7 +4,7 @@ This document provides the build options and installation instructions for **tvh
 
 # Motivation
 
-I could not use my dvb_usb tuners with the most recent stable version of tvheadend 4.09 that is supplied with the latest version of OSMC.  I could get w_scan to work but then tvheadend would not recognize the device.  There appear to be a number of OSMC forum threads on this issue with suggested solutions.  In my case the tvheadend version 4.1-2426 is now working well on my Raspberry Pi B and the usb DVB-T devices are recognized.
+I could not use my usb DVB-T (August T202, August T205 and Avermedia Volar Green) tuners with the most recent stable version of tvheadend 4.09 that is supplied with the latest version of OSMC.  I could get w_scan to work but then tvheadend would not recognize the device.  There appear to be a number of OSMC forum threads on this issue with suggested solutions.  In my case the tvheadend version 4.1-2426 is now working well on my Raspberry Pi B and the usb DVB-T devices are recognized.  I am using the August T202 device.
 
 # OSMC Version
 
@@ -12,7 +12,7 @@ This is the **OSMC 2017.02-2** release installed from image **OSMC_TGT_rbp1_2017
 
     $ sudo wget http://download.osmc.tv/installers/diskimages/OSMC_TGT_rbp1_20170210.img.gz
 
-Then unpack and burn the image to your preferred device with dd.  This is outside the scope of this document.
+Then unpack and burn the image to your preferred device with dd.  This procedure is outside the scope of this document.
 
 # DVB-T Device
 
@@ -21,7 +21,6 @@ I am using the inexpensive but excellent **August T202 DVB-T** device.  The firm
     dvb-usb-it9135-02.fw
     dvb-usb-af9035-03.fw
 
-This has not been tested with all usb dvb devices but provided the correct firmware is applied there is every chance they will work.
 
 # Build Options
 
@@ -29,7 +28,7 @@ Building this version is optional as it can be installed with the provided .deb 
 
     AUTOBUILD_CONFIGURE_EXTRA="--disable-ffmpeg_static --disable-libvpx_static --disable-libtheora_static --disable-libvorbis_static --disable-libfdkaac_static" ./Autobuild.sh
 
-or (untried but according to irc #hts this will also work):
+or by doing (untried but according to irc #hts this will also work):
 
     AUTOBUILD_CONFIGURE_EXTRA="--disable-ffmpeg_static" ./Autobuild.sh
 
@@ -77,4 +76,3 @@ I thank the (separate and independent) development teams of tvheadend and osmc f
 
 - https://tvheadend.org/projects/tvheadend/wiki/Donate
 - https://osmc.tv/blog/#donate
-

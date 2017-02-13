@@ -1,6 +1,6 @@
 # About
 
-This document provides the build options and installation instructions for **tvheadend 4.1-2426** (considered unstable as of this writing) for the Rasberry Pi.  The repository contains the prebuilt .deb archive for OSMC version 2017.02-2 as follows:
+This document provides the build options and installation instructions for **tvheadend 4.1-2426** (considered unstable as of this writing) for the Rasberry Pi.  The repository contains the prebuilt .deb archive for **OSMC 2017.02-2** (Pi B/Zero) as follows:
 
     $ uname -a
     Linux osmc 4.4.27-7-osmc #1 SMP PREEMPT Tue Jan 24 03:38:31 UTC 2017 armv7l GNU/Linux

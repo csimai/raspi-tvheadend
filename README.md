@@ -72,7 +72,7 @@ There is no expressed or implied warranty for this software.  Use it entirely at
 
 # Acknowledgements
 
-I thank the (separate and independent) development teams of tvheadend and osmc for their excellent work.  Please contribute to their efforts by *donating*.  Donations can be made as follows:
+I thank the (separate and independent) development teams of tvheadend and osmc for their excellent work.  Please contribute to their efforts by **donating**.  Donations can be made as follows:
 
 - https://tvheadend.org/projects/tvheadend/wiki/Donate
 - https://osmc.tv/blog/#donate

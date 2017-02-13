@@ -31,15 +31,17 @@ I am using the inexpensive but excellent **August T202 DVB-T** device.  The firm
 
 # Build Options
 
-Building is optional as it can be installed with the provided .deb archive - this section is given for the purpose of completelness and can be skipped (see section **Installation** below).  However for those interested the build was done on a Rasberry Pi B by first downloading the latest tvheadend source from https://github.com/tvheadend/tvheadend.  Then cd into the directory and do:  
+Building is optional as it can be installed with the provided .deb archive - this section is given for the purpose of completelness and can be skipped (see section **Installation** below).  However for those interested the build was done on a Rasberry Pi B and the tvheadend source for this build has been forked and can be obtained from https://github.com/csimai/tvheadend.  To access it, do:
 
+    $ git clone https://github.com/csimai/tvheadend.git
+    $ cd tvheadend
     $ sudo AUTOBUILD_CONFIGURE_EXTRA="--disable-ffmpeg_static --disable-libvpx_static --disable-libtheora_static --disable-libvorbis_static --disable-libfdkaac_static" ./Autobuild.sh
 
-or by doing (untried but according to irc #hts this will also work):
+or alternatively (untried but according to irc #hts this will also work):
 
     $ sudo AUTOBUILD_CONFIGURE_EXTRA="--disable-ffmpeg_static" ./Autobuild.sh
 
-There will be a lot of dependencies to install, and the procedure will stop until these are satisfied.  The final .deb archive products will be:
+There will be a lot of dependencies to install, and the procedure will stop until each of these are satisfied - this process to completion will probably take 4 or 5 hours with the related builds and package installations.  The final .deb archive products will be:
 
     tvheadend_4.1-2426~gef89ef8_armhf.deb
     tvheadend-dbg_4.1-2426~gef89ef8_armhf.deb

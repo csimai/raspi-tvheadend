@@ -75,7 +75,7 @@ When everything has installed well and tvheadend is set up then `/home/osmc/.hts
 
 That's it!
 
-# Warranty and License.
+# Warranty and License
 
 There is no expressed or implied warranty for this software.  Use it entirely at your own risk.  The License is that of the tvheadend software which is currently GPLv3 with the intent to license as GPLv2 in future. 
 

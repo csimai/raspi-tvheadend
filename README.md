@@ -1,34 +1,34 @@
 # About
 
-This document provides the build options and installation instructions for *tvheadend 4.1-2426* for the Rasberry Pi which as of this writing is considered unstable.  The repository contains the prebuilt .deb archive for OSMC version 2017.02-2 as follows:
+This document provides the build options and installation instructions for **tvheadend 4.1-2426** (considered unstable as of this writing) for the Rasberry Pi.  The repository contains the prebuilt .deb archive for OSMC version 2017.02-2 as follows:
 
     $ uname -a
     Linux osmc 4.4.27-7-osmc #1 SMP PREEMPT Tue Jan 24 03:38:31 UTC 2017 armv7l GNU/Linux
 
 # Motivation
 
-I could not use dvb_usb tuners with the most recent stable version of tvheadend 4.09 that is supplied with the latest version of OSMC.  I could get w_scan to work but tvheadend would not recognize the device.  There appears to be a number of forum entries on this issue.  The tvheadend version 4.1-2426 is now working well on my Raspberry Pi B.
+I could not use my dvb_usb tuners with the most recent stable version of tvheadend 4.09 that is supplied with the latest version of OSMC.  I could get w_scan to work but then tvheadend would not recognize the device.  There appear to be a number of OSMC forum threads on this issue with suggested solutions.  In my case the tvheadend version 4.1-2426 is now working well on my Raspberry Pi B and the usb DVB-T devices are recognized.
 
 # OSMC Version
 
-This is the *2017.02-2* release installed from image *OSMC_TGT_rbp1_20170210.img.gz*.  This can be obtained by:
+This is the **OSMC 2017.02-2** release installed from image **OSMC_TGT_rbp1_20170210.img.gz**.  This can be obtained by:
 
-   $ sudo wget http://download.osmc.tv/installers/diskimages/OSMC_TGT_rbp1_20170210.img.gz
+    $ sudo wget http://download.osmc.tv/installers/diskimages/OSMC_TGT_rbp1_20170210.img.gz
 
 Then unpack and burn the image to your preferred device with dd.  This is outside the scope of this document.
 
 # DVB-T Device
 
-I am using the inexpensive but excellent *August T202 DVB-T* device.  The firmware for this tuner is:
+I am using the inexpensive but excellent **August T202 DVB-T** device.  The firmware for this tuner is:
 
     dvb-usb-it9135-02.fw
     dvb-usb-af9035-03.fw
 
-This has not been tested with other usb dvb devices but should work provided the correct firmware is used.
+This has not been tested with all usb dvb devices but provided the correct firmware is applied there is every chance they will work.
 
 # Build Options
 
-Building this version is optional as it can be installed with the provided .deb archive - this section is given for the purpose of completelness and can be skipped (see section *Installation* below).  However for those interested the build was done on a Rasberry Pi B/Zero by first downloading the latest tvheadend source from https://github.com/tvheadend/tvheadend.  The cd to the directory and do:  
+Building this version is optional as it can be installed with the provided .deb archive - this section is given for the purpose of completelness and can be skipped (see section **Installation** below).  However for those interested the build was done on a Rasberry Pi B by first downloading the latest tvheadend source from https://github.com/tvheadend/tvheadend.  Then cd into the directory and do:  
 
     AUTOBUILD_CONFIGURE_EXTRA="--disable-ffmpeg_static --disable-libvpx_static --disable-libtheora_static --disable-libvorbis_static --disable-libfdkaac_static" ./Autobuild.sh
 
@@ -55,7 +55,7 @@ Dependencies are:
 
 So do:
 
-    sudo apt-get install \
+    $ sudo apt-get install \
     zlib1g \
     libc6 \
     libssl1.0.0 \
@@ -66,7 +66,7 @@ So do:
 
 Then do:
 
-   sudo dpkg -i tvheadend_4.1-2426~gef89ef8_armhf.deb
+    $ sudo dpkg -i tvheadend_4.1-2426~gef89ef8_armhf.deb
 
 That's it.  It should install.
 

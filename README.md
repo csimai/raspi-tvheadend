@@ -14,6 +14,13 @@ This is the **OSMC 2017.02-2** release installed from image **OSMC_TGT_rbp1_2017
 
 Then unpack and burn the image to your preferred device with dd.  This procedure is outside the scope of this document.
 
+# Kernel Version
+
+The kernel version for this release is:
+
+    $ uname -a
+    Linux osmc 4.4.27-7-osmc #1 SMP PREEMPT Tue Jan 24 03:38:31 UTC 2017 armv7l GNU/Linux
+
 # DVB-T Device
 
 I am using the inexpensive but excellent **August T202 DVB-T** device.  The firmware for this tuner is:

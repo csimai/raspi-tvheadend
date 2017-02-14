@@ -2,6 +2,8 @@
 
 This document provides the build options and installation instructions for **tvheadend 4.1-2426** (considered unstable as of this writing) for the Rasberry Pi.  The repository contains the prebuilt .deb archive for **OSMC 2017.02-2** (Pi B/Zero).
 
+The general build process is presented but is not needed to install on OSMC 2017.02-2.  However, it could be of some value as a guide where OS's other than OSMC are used on the RasPi B/Zero. 
+
 # Motivation
 
 I could not use my usb DVB-T (August T202, August T205 and Avermedia Volar Green) tuners with the most recent stable version of tvheadend 4.09 that is supplied with the latest version of OSMC.  I could get w_scan to work but then tvheadend would not recognize the device.  There appear to be a number of OSMC forum threads on this issue with suggested solutions.  In my case the tvheadend version 4.1-2426 is now working well on my Raspberry Pi B and the usb DVB-T devices are recognized.  I am using the August T202 device.
@@ -28,6 +30,7 @@ I am using the inexpensive but excellent **August T202 DVB-T** device.  The firm
     dvb-usb-it9135-02.fw
     dvb-usb-af9035-03.fw
 
+To identify other USB DVB-T/T2 firmware, see https://www.linuxtv.org/wiki/index.php/DVB-T_USB_Devices.
 
 # Build Options
 

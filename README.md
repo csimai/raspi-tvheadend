@@ -32,9 +32,9 @@ I am using the inexpensive but excellent **August T202 DVB-T** device.  The firm
 
 To identify other USB DVB-T/T2 firmware, see https://www.linuxtv.org/wiki/index.php/DVB-T_USB_Devices.
 
-# Build Options
+# Building
 
-Building is optional as it can be installed with the provided .deb archive - this section is given for the purpose of completelness and can be skipped (see section **Installation** below).  However for those interested the build was done on a Rasberry Pi B and the tvheadend source for this build can be obtained from https://github.com/csimai/tvheadend.  To access it, do:
+Building is optional as it can be installed with the provided .deb archive - this section is given for the purpose of completelness and can be skipped (see section **Installation** below).  However for those interested the build was done on a Rasberry Pi B and the tvheadend source for this build can be obtained from https://github.com/csimai/tvheadend.  To access and build it, do:
 
     $ git clone https://github.com/csimai/tvheadend.git
     $ cd tvheadend

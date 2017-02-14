@@ -34,7 +34,7 @@ To identify other USB DVB-T/T2 firmware, see https://www.linuxtv.org/wiki/index.
 
 # Build Options
 
-Building is optional as it can be installed with the provided .deb archive - this section is given for the purpose of completelness and can be skipped (see section **Installation** below).  However for those interested the build was done on a Rasberry Pi B and the tvheadend source for this build has been forked and can be obtained from https://github.com/csimai/tvheadend.  To access it, do:
+Building is optional as it can be installed with the provided .deb archive - this section is given for the purpose of completelness and can be skipped (see section **Installation** below).  However for those interested the build was done on a Rasberry Pi B and the tvheadend source for this build can be obtained from https://github.com/csimai/tvheadend.  To access it, do:
 
     $ git clone https://github.com/csimai/tvheadend.git
     $ cd tvheadend
